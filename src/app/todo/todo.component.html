@@ -1,0 +1,19 @@
+<div class="todo-container">
+  <mat-toolbar color="primary" class="todo-toolbar">
+    <span class="title">To-Do List</span>
+  </mat-toolbar>
+  <mat-form-field appearance="fill">
+    <mat-label>New To-Do</mat-label>
+    <input matInput [(ngModel)]="newTodo" placeholder="Add new to-do" />
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="addTodo()">Add</button>
+  <mat-list>
+    <mat-list-item *ngFor="let todo of todos">
+      <app-todo-item
+        [todo]="todo"
+        (toggleStatus)="toggleTodoStatus(todo.id)"
+        (delete)="deleteTodo(todo.id)"
+      ></app-todo-item>
+    </mat-list-item>
+  </mat-list>
+</div>

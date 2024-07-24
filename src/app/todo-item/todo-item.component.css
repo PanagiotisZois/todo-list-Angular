@@ -1,0 +1,9 @@
+.done {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  mat-icon {
+    vertical-align: middle;
+  }
+  

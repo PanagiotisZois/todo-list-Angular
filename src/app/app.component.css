@@ -1,0 +1,15 @@
+/* App Component Styles */
+
+.app-toolbar {
+    background-color: #bd9dcf; /* Example: deep blue color for the toolbar */
+    color: white; /* Ensure the text color contrasts with the background */
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
